@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form_container">
+    <div class="form">
+      <form action="">
+        <h4>Contact Us</h4>
+        <div class="reg_details">
+          <div class="input_box names">
+            <label for="">First Name <span class="star">*</span> </label><br>
+            <input class="field firstname" type="text"> <br>
+            <p class="hidden firstnameErr">This field is required</p>
+          </div>
+          <div class="input_box names">
+            <label for="">Last Name <span class="star">*</span></label><br>
+            <input class="field lastname" type="text">
+            <p class="hidden lastnameErr">This field is required</p>
+            <br>
+          </div>
+          <div class="input_box email">
+            <label for=""> Email Address <span class="star">*</span></label> <br>
+            <input class="field emailInput" type="text">
+            <p class="hidden emailErr">Please enter a valid email address</p> <br>
+          </div>
+          <div class="input_box query">
+            <label for="" required>Query Type <span class="star">*</span></label> <br>
+            <div class="query_box">
+              <div class="query_container active"><input class="checkbox1" name="check1" type="radio">
+                <label class="query_label" for=""> General Enquiry</label>
+              </div>
+
+              <div class="query_container active"><input class="checkbox1" name="check1" type="radio">
+                <label class="query_label" for="">Support Request</label> <br>
+              </div>
+            </div>
+
+            <p class="hidden queryErr"> Please select a query type</p>
+          </div>
+
+          <div class="input_box message">
+            <label for="">Message</label> <br>
+            <input class="field message" for=""></input>
+            <p class="hidden messageErr">This field is required</p> <br>
+          </div>
+          <div class="input_box consent">
+            <input class="checkbox" type="checkbox">
+            <label for=""> I consent to being contacted by the team.</label>
+            <p class="hidden consentErr">To submit this form, please consent
+              to being contacted.</p> <br>
+            <button class="btn"> Submit</button>
+
+          </div>
+
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="success">
+    <h4><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+        <path fill="#fff"
+          d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z" />
+      </svg> Message Sent!</h4>
+    <h5>Thanks for completing the form. We'll be in touch soon!</h5>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+</body>
+
+</html>
